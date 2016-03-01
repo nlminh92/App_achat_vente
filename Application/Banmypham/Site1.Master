@@ -1,0 +1,238 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Banmypham.Site1" %>
+
+
+<%@ Register Src="Control/Sanphamuachuongnhat.ascx"  TagName="mpbanchaynhat" TagPrefix="mpbc" %>
+<%@ Register Src="Control/Myphammoinhat.ascx" TagName="mpmoinhat" TagPrefix="mpmn" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Shop my pham MyTam</title>
+    <link rel="Stylesheet" type="text/css" href="menuhang.css" />
+    <link rel="Stylesheet" type="text/css" href="Styles.css" />
+    
+    <style type="text/css">
+        #imgcontent
+        {
+            width: 595px;
+        }
+        .style3
+        {
+            width: 377px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="container" style="width:1000px; padding-left:150px; padding-right:150px; height: auto">
+    <div id="header" style=" width:1000px; height:200px">
+        <img src="Images/88201293538hinh_7.jpg" width="1000px" height="200px"/>
+    </div>
+    <div id="mainmenu">
+        <div id="mainmenu1" style=" width:1000px; height: 50px; overflow: hidden; background-color: #FF0080;">
+        <ul id="main_menu" style=" float: left; padding-left: 320px; width: 100%; margin-left: 0px;">
+            <li style=" float: left; padding: 0 25px; height: 49px; padding-bottom: 30px;"><a href="/Default.aspx" style="color:White; font: bold 14px Arial; line-height: 40px; text-transform: uppercase;">TRANG CHỦ</a></li>
+            <li style=" float: left; padding: 0 25px; height: 49px; padding-bottom: 30px;"><a href="/gioithieu.aspx" style="color:White; font: bold 14px Arial; line-height: 40px; text-transform: uppercase;">GIỚI THIỆU</a></li>
+            <li style=" float: left; padding: 0 25px; height: 49px; border: none; padding-bottom: 30px;" class="last"><a href="/lienhe.aspx" style="color:White; font: bold 14px Arial; line-height: 40px; text-transform: uppercase;">LIÊN HỆ</a></li>
+        </ul>
+        </div>
+    </div>
+
+    <div id="menu" style="height: auto; width:202px; float:left;">      
+        <div class="block_header" >Danh mục theo hãng</div>
+            <div class="block_content" style=" border-bottom: 1px solid #D71671">
+                <div class="menuhang">                           
+                    <ul id="menuhang1">
+                        <li><a href="/myphamtheohang.aspx">MỸ PHẨM OLAY</a></li>
+                        <li><a href="/POND.aspx" >MỸ PHẨM POND</a></li>
+                        <li><a href="/NIVEA.aspx">MỸ PHẨM NIVEA</a></li>
+                        <li><a href="/SHISEIDO.aspx">MỸ PHẨM SHISEIDO</a></li>
+                        <li><a href="/MAYBELLINE.aspx">MỸ PHẨM MABELLINE</a></li>
+                        <li><a href="/BIORE.aspx">MỸ PHẨM BIORE</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        <div class="block_left">
+            <div class="block_header">Danh mục sản phẩm</div>
+            <div class="block_content">
+                <div class="menuhang">
+                <ul id="menuhang1">
+                    <li><a href="/sonmoi.aspx">SON MÔI</a></li>
+                    <li><a href="/phanma.aspx">PHẤN MÁ</a></li>
+                    <li><a href="/phanmat.aspx">PHẤN MẮT</a></li>
+                    <li><a href="/suaruamat.aspx">SỮA RỬA MẶT</a></li>
+                    <li><a href="/kemduongda.aspx">KEM DƯỠNG DA</a></li>
+                    <li><a href="/nuochoahong.aspx">NƯỚC HOA HỒNG</a></li>
+                </ul>
+                </div>
+            </div>           
+        </div>
+        <div class="block_left">
+            <div class="block_header">Sản phẩm mới nhất</div>
+            <div class="block_content" style=" height: 520px; width: 196px;">
+                <table>
+                    <tr>
+                    <td>
+                        <mpmn:mpmoinhat runat="server" ID="mpmoinhat1"/>
+                    </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="block_left">
+            <div class="block_header">Quảng cáo</div>
+            <div class="block_content" style=" height: 200px; Border-bottom: 1px solid #D71671;">
+                <marquee behavior="scroll" direction="up" scrollamount="4" height="200px" onmouseover="this.stop();" onmouseout="this.start();">
+                    <asp:ImageButton ID="imagebtn" ImageUrl="Images/socnhi.jpg" runat="server" 
+                    Width="195px" onclick="imagebtn_Click" />
+                    <br />
+                    <asp:ImageButton ID="imagebtn2" ImageUrl="Images/tro choi viet.jpg" 
+                    runat="server" Width="195px" onclick="imagebtn2_Click" />
+                    <asp:ImageButton ID="imagebtn3" ImageUrl="Images/banmt.jpg" 
+                    runat="server" Width="195px" onclick="imagebtn3_Click" /></marquee>
+            </div>
+        </div>
+    </div>
+    <div id="slide" style=" width: 595px; float: left">
+        <img src="Images/hero_Flawless_White2.jpg" id="imgcontent" height="300" />
+    </div>
+    <div id="advertise" style="width:200px; height:1123px; float: right;">
+        <div class="block_left">
+            <div class="block_header">Tìm kiếm sản phẩm</div>
+                <div>
+                    <div class="block_content">
+                        <div id="search"><br />
+                    
+                            <asp:TextBox ID="txtsearch" runat="server" Width="130px" Height="25px" 
+                            BorderColor="#FF0080"></asp:TextBox>&nbsp;&nbsp;
+                    
+                            <asp:Button ID="btnSearch" runat="server" Text="Tìm" Width="50px" 
+                            Font-Bold="True" ForeColor="White" BackColor="#FF0080" Height="25px" 
+                            onclick="btnSearch_Click"/><br /><br />
+                    
+                        </div>
+                    </div>
+                </div>
+            <div>
+                <div style=" font-size: 18px; font-weight:bold; color: #FF0080; border-left: 1 solid #D71671; border-right: 1 solid #D71671;">&nbsp;&nbsp;&nbsp;&nbsp;Tìm kiếm theo giá  
+                </div>
+                <div class="block_content">&nbsp;&nbsp;
+                    <asp:Label  runat="server" Text="Từ" Font-Bold="true" Font-Size="16px"></asp:Label><br />&nbsp;&nbsp;
+                    <asp:DropDownList runat="server" ID="drTu">
+                        <asp:ListItem>50000</asp:ListItem>
+                        <asp:ListItem>200000</asp:ListItem>
+                        <asp:ListItem>500000</asp:ListItem>
+                        <asp:ListItem>1000000</asp:ListItem>
+                    </asp:DropDownList><br />&nbsp;&nbsp;
+                    <asp:Label runat="server" Text="Đến" Font-Bold="true" Font-Size="16px"></asp:Label>&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="btnTimtheogia" Text="Tìm" Width="70px" runat="server" 
+                        Font-Bold="true" ForeColor="White" BackColor="#FF0080" 
+                        onclick="btnTimtheogia_Click" /><br />&nbsp;&nbsp; 
+                    <asp:DropDownList ID="drDen" runat="server">
+                        <asp:ListItem>200000</asp:ListItem>
+                        <asp:ListItem>500000</asp:ListItem>
+                        <asp:ListItem>1000000</asp:ListItem>
+                        <asp:ListItem>1500000</asp:ListItem>
+                    </asp:DropDownList><br />
+                    
+                </div>
+            </div>
+        </div>
+        <div class="block_left">
+            <div class="block_header">Đăng nhập đăng ký</div>
+            <div class="block_content" style=" padding-left:20px; padding-right: 20px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="Signin" runat="server" Font-Underline="true" NavigateUrl="~/dangky.aspx" ForeColor="#FF0080" Font-Bold="true">Sign in</asp:HyperLink><br />
+                <asp:TextBox ID="txtUser" runat="server" Width="150px" Height="20px" BorderColor="#FF0080"></asp:TextBox><br />
+                <asp:TextBox ID="txtPassword" runat="server" Width="150px" Height="20px" 
+                    BorderColor="#FF0080" TextMode="Password"></asp:TextBox><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="btnLogin" runat="server" Text="Login" Width="60px" 
+                    BackColor="#FF0080" ForeColor="White" Font-Bold="true" 
+                    onclick="btnLogin_Click"/> 
+                <asp:Label ID="lblMessage" runat="server"></asp:Label><br />
+                <asp:Label ID="lbltendangnhap" runat="server" ForeColor="#FF0080"></asp:Label><br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:LinkButton ID="lbtLogout" runat="server" ForeColor="#FF0080" Text="Logout" 
+                    onclick="lbtLogout_Click"></asp:LinkButton>   
+                <asp:LinkButton ID="lbtAdmin" runat="server" Text="Admin" Visible="false" 
+                    onclick="lbtAdmin_Click"></asp:LinkButton>    
+            </div>
+        </div>
+        <div class="block_left">
+            <div class="block_header">Đặt hàng online</div>
+            <div class="block_content" style=" background-color:White">
+                <div align="center">
+                    <font color="#FF0080"><b><p>Giỏ hàng còn trống</p></b></font>
+                    <a href="/giohang.aspx">
+                    <img border="0" align="middle" src="Images/giohang.jpg" 
+                            style="height: 55px; width: 104px" /></a>
+                    <br />
+                </div>
+                <div class="clear">
+                </div>                
+            </div>
+        </div>
+        <div class="block_left">
+            <div class="block_header">Hỗ trợ trực tuyến</div>
+            <div class="block_content" style=" background-color:White">
+                <div align="center"><a href="yahoo.com"><img width="115px" height="50px" border="0" align="middle" src="Images/yahoo.jpg" /></a><br />
+                <font color="#FF0000">Mrs.My<br />01635849893</font><br />
+                </div>
+                <div align="center"><a href="yahoo.com"><img width="115px" height="50px" border="0" align="middle" src="Images/yahoo.jpg" /></a><br />
+                <font color="#FF0000">Mrs.Tam<br />01648276077</font><br />
+                </div>
+            </div>
+        </div>
+
+        <div class="block_left">
+            <div class="block_header">
+            Sản phẩm bán chạy nhất
+            </div>
+            <div class="block_content" style="border-bottom: 1px solid #D71671; height: 500px;">
+                <table>        
+                    <tr>  
+                        <td class="style3">   
+                            <mpbc:mpbanchaynhat ID="mpbanchaynhat1" runat="server" />
+                            
+                        </td>
+                    </tr>
+                </table>          
+            </div>           
+        </div>
+    </div>
+    <div id="content" style=" width: 590px; height:auto; float:left;">
+        <asp:ContentPlaceHolder ID="main" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="footer">
+        <table style="margin: 0px; width:100%; background-color: #808000; height: 150px;" 
+            align="center">
+            <tr>
+                <td align="center">
+                    Copyright © MMT&amp;TTK51 All Reverse;<br />
+                    Khoa công nghệ thông tin- Trường đại học giao thông vận tải<br />
+                    ĐT:1900100c0- Fax: 123456789
+                </td>
+            </tr>
+   
+        </table>
+    </div>
+    </div>
+    </form>
+    <%--<script language="javascript">
+        var i = 0;
+        function thaydoihinhanh() {
+            if (i == 5) i = 0;
+            if (i == 0) { imgcontent.alt = ""; imgcontent.src = "Images\hero_Flawless_White2.jpg" }
+            if (i == 1) { imgcontent.alt = ""; imgcontent.src = "Images\Rocket-HPBB-041113.jpg" }
+            if (i == 2) { imgcontent.alt = ""; imgcontent.src = "Images\88201293538hinh_7.jpg" }
+            if (i == 3) { imgcontent.alt = ""; imgcontent.src = "Images\88201293516hinh_6.jpg" }
+            if (i == 4) { imgcontent.alt = ""; imgcontent.src = "Images\hero_white-beauty.jpg" }
+            setTimeout(thaydoihinhanh, 5)
+            i++;
+        }
+    </script>--%>
+</body>
+</html>

@@ -1,0 +1,6 @@
+D:\Banmypham\Banmypham\bin\Banmypham.dll
+D:\Banmypham\Banmypham\bin\Banmypham.pdb
+D:\Banmypham\Banmypham\obj\Debug\Banmypham.dll
+D:\Banmypham\Banmypham\obj\Debug\Banmypham.pdb
+D:\Banmypham\Banmypham\obj\Debug\Banmypham.csprojResolveAssemblyReference.cache
+D:\Banmypham\Banmypham\bin\CollectionPager.dll

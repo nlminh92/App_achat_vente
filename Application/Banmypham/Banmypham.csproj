@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DF5FB264-3EAA-4C54-86AC-B0BB045EB92C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Banmypham</RootNamespace>
+    <AssemblyName>Banmypham</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CollectionPager">
+      <HintPath>C:\Users\My\Downloads\CollectionPager.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Chitietmypham.aspx" />
+    <Content Include="Connect.asmx" />
+    <Content Include="Control\Myphammoinhat.ascx" />
+    <Content Include="Control\San pham.ascx" />
+    <Content Include="Control\Sanphamuachuongnhat.ascx" />
+    <Content Include="dangky.aspx" />
+    <Content Include="GioHang.aspx" />
+    <Content Include="gioithieu.aspx" />
+    <Content Include="Images\88201293516hinh_6.jpg" />
+    <Content Include="Images\88201293538hinh_7.jpg" />
+    <Content Include="Images\banmt.jpg" />
+    <Content Include="Images\Bio-Performance duong chong lao hoa 1750k.jpg" />
+    <Content Include="Images\Brightening cleansing Foam-White lucent 700k.jpg" />
+    <Content Include="Images\Brightening moisturizing Night 1100k.jpg" />
+    <Content Include="Images\chi ke chan may maybelline 69k.png" />
+    <Content Include="Images\chong nang duong am biore 145k.png" />
+    <Content Include="Images\clear Smooth All in one maybelline 108k.png" />
+    <Content Include="Images\color-whisper040113.jpg" />
+    <Content Include="Images\dathang.png" />
+    <Content Include="Images\dau tay trang biore 159k.png" />
+    <Content Include="Images\dung dich tay trang mat va moi maybelline 59k.png" />
+    <Content Include="Images\duong am ban ngay 1100k.jpg" />
+    <Content Include="Images\Extra Creamy Cleansing Foam 800k.jpg" />
+    <Content Include="Images\Flowers_wallpapers_591.jpg" />
+    <Content Include="Images\flowing-background1.jpg" />
+    <Content Include="Images\gen chong nang mat lanh biore 125k.png" />
+    <Content Include="Images\giohang.jpg" />
+    <Content Include="Images\hero_Flawless_White2.jpg" />
+    <Content Include="Images\hero_white-beauty.jpg" />
+    <Content Include="Images\images %281%29.jpg" />
+    <Content Include="Images\ke mat nuoc hypersharp 148k.png" />
+    <Content Include="Images\kem duong da trang diem 8 trong 1 BB Cream mabelline 98k.png" />
+    <Content Include="Images\Kem pond Flawless white natural dem 225k.jpg" />
+    <Content Include="Images\Kem pond Flawless white natural ngay 225k.jpg" />
+    <Content Include="Images\kem pond ngan ngua lao hoa da ban ngay 360k.jpg" />
+    <Content Include="Images\kem vi duong Regenerist 450k.jpg" />
+    <Content Include="Images\kem-duong-trang-da-ban-dem-140k.jpg" />
+    <Content Include="Images\kem-duong-trang-da-ban-ngay-140k.jpg" />
+    <Content Include="Images\khan giay tay trang chua dau biore 29k.png" />
+    <Content Include="Images\mascare volum%27 Express Falsies maybelline 168k.png" />
+    <Content Include="Images\mieng dan lot mui biore 25k.png" />
+    <Content Include="Images\mypham1.jpg" />
+    <Content Include="Images\nen.jpg" />
+    <Content Include="Images\nuoc hoa hong cho da dau hon hop 450k.jpg" />
+    <Content Include="Images\olay professional 75k.jpg" />
+    <Content Include="Images\olay total effect 450k.jpg" />
+    <Content Include="Images\phan ma hong  cheeky glow maybelline 78k.png" />
+    <Content Include="Images\phan ma hong 5 mau da nang Face it baked Shimmer blusher.jpg" />
+    <Content Include="Images\phan ma hong chong dau clear smooth maybelline 78k.png" />
+    <Content Include="Images\phan mat 5 mau anh kim cuong maybelline 250k.png" />
+    <Content Include="Images\phan phu chong nhon clear smooth maybelline 89k.png" />
+    <Content Include="Images\Regenerist Eye lifting Serum 450k.jpg" />
+    <Content Include="Images\Regenerist Revitalizing cream 350k.jpg" />
+    <Content Include="Images\Rocket-HPBB-041113.jpg" />
+    <Content Include="Images\socnhi.jpg" />
+    <Content Include="Images\son duong moi lap lanh moi hong nivea 95k.jpg" />
+    <Content Include="Images\son moi duong am anh kim cuong maybelline 118k.png" />
+    <Content Include="Images\song duong hong tham nivea 100k.jpg" />
+    <Content Include="Images\sua rua mat sach nhon biore 43k.png" />
+    <Content Include="Images\sua tam sang min biore 75k.png" />
+    <Content Include="Images\sua tay trang 2 trong 1 biore 49k.png" />
+    <Content Include="Images\toc 4.jpg" />
+    <Content Include="Images\tro choi viet.jpg" />
+    <Content Include="Images\Whats_New_HPBB.jpg" />
+    <Content Include="Images\xit khu mui nu chong vet o vang nivea 120k.jpg" />
+    <Content Include="Images\yahoo.jpg" />
+    <Content Include="lienhe.aspx" />
+    <Content Include="Manager\Chitiethdb.aspx" />
+    <Content Include="Manager\Default.aspx" />
+    <Content Include="Manager\Doanhthutheothang.aspx" />
+    <Content Include="Manager\Quanliadmin.aspx" />
+    <Content Include="Manager\Quanliloaimp.aspx" />
+    <Content Include="Manager\Themmypham.aspx" />
+    <Content Include="Manager\Timkiemhoadonban.aspx" />
+    <Content Include="menuhang.css" />
+    <Content Include="Myphamcungloai.aspx" />
+    <Content Include="myphamtheohang.aspx" />
+    <Content Include="NIVEA.aspx" />
+    <Content Include="phanma.aspx" />
+    <Content Include="POND.aspx" />
+    <Content Include="sonmoi.aspx" />
+    <Content Include="Styles.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Timkiem.aspx" />
+    <Content Include="Timkiemtheogia.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chitietmypham.aspx.cs">
+      <DependentUpon>Chitietmypham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chitietmypham.aspx.designer.cs">
+      <DependentUpon>Chitietmypham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Connect.asmx.cs">
+      <DependentUpon>Connect.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Control\Giohang.cs" />
+    <Compile Include="Control\Myphammoinhat.ascx.cs">
+      <DependentUpon>Myphammoinhat.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Myphammoinhat.ascx.designer.cs">
+      <DependentUpon>Myphammoinhat.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\San pham.ascx.cs">
+      <DependentUpon>San pham.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\San pham.ascx.designer.cs">
+      <DependentUpon>San pham.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\Sanphamuachuongnhat.ascx.cs">
+      <DependentUpon>Sanphamuachuongnhat.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\Sanphamuachuongnhat.ascx.designer.cs">
+      <DependentUpon>Sanphamuachuongnhat.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="dangky.aspx.cs">
+      <DependentUpon>dangky.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dangky.aspx.designer.cs">
+      <DependentUpon>dangky.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GioHang.aspx.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GioHang.aspx.designer.cs">
+      <DependentUpon>GioHang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gioithieu.aspx.cs">
+      <DependentUpon>gioithieu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gioithieu.aspx.designer.cs">
+      <DependentUpon>gioithieu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="lienhe.aspx.cs">
+      <DependentUpon>lienhe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lienhe.aspx.designer.cs">
+      <DependentUpon>lienhe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Chitiethdb.aspx.cs">
+      <DependentUpon>Chitiethdb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\Chitiethdb.aspx.designer.cs">
+      <DependentUpon>Chitiethdb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Doanhthutheothang.aspx.cs">
+      <DependentUpon>Doanhthutheothang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\Doanhthutheothang.aspx.designer.cs">
+      <DependentUpon>Doanhthutheothang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\dstDoanhthutheothang.cs">
+      <DependentUpon>dstDoanhthutheothang.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manager\dstDoanhthutheothang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dstDoanhthutheothang.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Manager.Master.cs">
+      <DependentUpon>Manager.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\Manager.Master.designer.cs">
+      <DependentUpon>Manager.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Quanliadmin.aspx.cs">
+      <DependentUpon>Quanliadmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\Quanliadmin.aspx.designer.cs">
+      <DependentUpon>Quanliadmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Quanliloaimp.aspx.cs">
+      <DependentUpon>Quanliloaimp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\Quanliloaimp.aspx.designer.cs">
+      <DependentUpon>Quanliloaimp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\rptDoanhthutheothang.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDoanhthutheothang.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Manager\Themmypham.aspx.cs">
+      <DependentUpon>Themmypham.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\Themmypham.aspx.designer.cs">
+      <DependentUpon>Themmypham.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Timkiemhoadonban.aspx.cs">
+      <DependentUpon>Timkiemhoadonban.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\Timkiemhoadonban.aspx.designer.cs">
+      <DependentUpon>Timkiemhoadonban.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Myphamcungloai.aspx.cs">
+      <DependentUpon>Myphamcungloai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Myphamcungloai.aspx.designer.cs">
+      <DependentUpon>Myphamcungloai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="myphamtheohang.aspx.cs">
+      <DependentUpon>myphamtheohang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="myphamtheohang.aspx.designer.cs">
+      <DependentUpon>myphamtheohang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NIVEA.aspx.cs">
+      <DependentUpon>NIVEA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NIVEA.aspx.designer.cs">
+      <DependentUpon>NIVEA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="phanma.aspx.cs">
+      <DependentUpon>phanma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="phanma.aspx.designer.cs">
+      <DependentUpon>phanma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="POND.aspx.cs">
+      <DependentUpon>POND.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="POND.aspx.designer.cs">
+      <DependentUpon>POND.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="sonmoi.aspx.cs">
+      <DependentUpon>sonmoi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sonmoi.aspx.designer.cs">
+      <DependentUpon>sonmoi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Timkiem.aspx.cs">
+      <DependentUpon>Timkiem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Timkiem.aspx.designer.cs">
+      <DependentUpon>Timkiem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Timkiemtheogia.aspx.cs">
+      <DependentUpon>Timkiemtheogia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Timkiemtheogia.aspx.designer.cs">
+      <DependentUpon>Timkiemtheogia.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site1.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Manager\Manager.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Manager\dstDoanhthutheothang.xsc">
+      <DependentUpon>dstDoanhthutheothang.xsd</DependentUpon>
+    </None>
+    <None Include="Manager\dstDoanhthutheothang.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dstDoanhthutheothang.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Manager\dstDoanhthutheothang.xss">
+      <DependentUpon>dstDoanhthutheothang.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Manager\rptDoanhthutheothang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDoanhthutheothang.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>33812</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

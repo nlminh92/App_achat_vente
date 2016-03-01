@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dstDoanhthutheothang" targetNamespace="http://tempuri.org/dstDoanhthutheothang.xsd" xmlns:mstns="http://tempuri.org/dstDoanhthutheothang.xsd" xmlns="http://tempuri.org/dstDoanhthutheothang.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dstDoanhthutheothang" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dstDoanhthutheothang" msprop:Generator_UserDSName="dstDoanhthutheothang">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Hoadonban" msprop:Generator_TableClassName="HoadonbanDataTable" msprop:Generator_TableVarName="tableHoadonban" msprop:Generator_RowChangedName="HoadonbanRowChanged" msprop:Generator_TablePropName="Hoadonban" msprop:Generator_RowDeletingName="HoadonbanRowDeleting" msprop:Generator_RowChangingName="HoadonbanRowChanging" msprop:Generator_RowEvHandlerName="HoadonbanRowChangeEventHandler" msprop:Generator_RowDeletedName="HoadonbanRowDeleted" msprop:Generator_RowClassName="HoadonbanRow" msprop:Generator_UserTableName="Hoadonban" msprop:Generator_RowEvArgName="HoadonbanRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SoHDB" msprop:Generator_ColumnVarNameInTable="columnSoHDB" msprop:Generator_ColumnPropNameInRow="SoHDB" msprop:Generator_ColumnPropNameInTable="SoHDBColumn" msprop:Generator_UserColumnName="SoHDB" type="xs:string" minOccurs="0" />
+              <xs:element name="Tongtien" msprop:Generator_ColumnVarNameInTable="columnTongtien" msprop:Generator_ColumnPropNameInRow="Tongtien" msprop:Generator_ColumnPropNameInTable="TongtienColumn" msprop:Generator_UserColumnName="Tongtien" type="xs:string" minOccurs="0" />
+              <xs:element name="Ngayban" msprop:Generator_ColumnVarNameInTable="columnNgayban" msprop:Generator_ColumnPropNameInRow="Ngayban" msprop:Generator_ColumnPropNameInTable="NgaybanColumn" msprop:Generator_UserColumnName="Ngayban" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

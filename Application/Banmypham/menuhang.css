@@ -1,0 +1,57 @@
+﻿.menuhang
+{
+    background:#fff;
+    width:194px;
+}
+.menuhang ul
+{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    font:bold 12px Arial;
+    width: 200px;
+    background:#fff;
+}
+/*top level menu link style*/
+ .menuhang ul li a 
+ {
+     display:block;
+     overflow:auto;
+     color:#FF0080;
+     font-weight: bold;
+     text-decoration: none;
+     padding-left: 10px;
+     height:33px;
+     line-height: 33px;
+     }
+   .menuhang ul li ul
+   {
+       position: absolute;
+       width:150px;
+       top: 0;
+       visibility: hidden;
+       z-index: 3000;
+       }
+   .menuhang ul li a:link
+   {    width: 187px;
+}
+   .menuhang ul li a:visited
+   {
+   }
+   .menuhang ul li a:actived
+   {
+       
+   }
+   .menuhang ul li a:visited
+   {
+       color: #FF0080;
+   }
+   .menuhang ul li a:hover
+   {
+       color:#DC127B;
+   }
+   .menuhang a.subfolderstyle
+   {
+       
+   }
+  
